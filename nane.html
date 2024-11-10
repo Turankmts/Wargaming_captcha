@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bunkerok Marketplace</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white font-sans">
+    <header class="flex justify-between items-center p-6 bg-gray-800">
+        <h1 class="text-2xl font-bold">Bunkerok</h1>
+        <div class="flex space-x-4">
+            <button class="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded">Начать продавать</button>
+          
+        </div>
+        <form class="flex space-x-2">
+            <input type="text" placeholder="Логин или почта" class="bg-gray-700 text-white px-4 py-2 rounded">
+            <input type="password" placeholder="Пароль" class="bg-gray-700 text-white px-4 py-2 rounded">
+            <button class="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-4 rounded">Регистрация</button>
+            <a href="/login" class="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-4 rounded">Войти</a>
+        </form>
+    </header>
+
+    <main class="p-6">
+        <section class="grid grid-cols-5 gap-4 mb-8">
+            <div class="bg-gray-800 p-4 rounded text-center cursor-pointer">Все категории</div>
+            <div class="bg-gray-800 p-4 rounded text-center cursor-pointer">Tanks Blitz</div>
+            <div class="bg-gray-800 p-4 rounded text-center cursor-pointer">Мир Танков</div>
+            <div class="bg-gray-800 p-4 rounded text-center cursor-pointer">War Thunder</div>
+            <div class="bg-gray-800 p-4 rounded text-center cursor-pointer">Minecraft</div>
+            <div class="bg-gray-800 p-4 rounded text-center cursor-pointer">Steam</div>
+        </section>
+
+        <section class="bg-gray-800 p-6 rounded mb-8 space-y-4">
+            <div class="flex space-x-4">
+                <div class="flex items-center space-x-2">
+                    <label>Цена, от</label>
+                    <input type="number" placeholder="₽" class="bg-gray-700 text-white px-2 py-1 rounded">
+                    <label>до</label>
+                    <input type="number" placeholder="₽" class="bg-gray-700 text-white px-2 py-1 rounded">
+                </div>
+                <input type="text" placeholder="Поиск по заголовку" class="flex-grow bg-gray-700 text-white px-4 py-2 rounded">
+                <button class="bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 rounded">Искать аккаунты</button>
+            </div>
+            <div class="flex space-x-4">
+                <div>
+                    <label>Отлетка (дни)</label>
+                    <div class="flex space-x-2">
+                        <input type="number" placeholder="Только, от" class="bg-gray-700 text-white px-2 py-1 rounded">
+                        <input type="number" placeholder="до" class="bg-gray-700 text-white px-2 py-1 rounded">
+                    </div>
+                </div>
+                <div>
+                    <span>Премиум</span>
+                    <div class="flex space-x-2">
+                        <button class="bg-gray-700 hover:bg-gray-600 text-white font-semibold py-1 px-2 rounded">Не важно</button>
+                        <button class="bg-gray-700 hover:bg-gray-600 text-white font-semibold py-1 px-2 rounded">Да</button>
+                        <button class="bg-gray-700 hover:bg-gray-600 text-white font-semibold py-1 px-2 rounded">Нет</button>
+                    </div>
+                </div>
+                <label class="flex items-center space-x-2">
+                    <input type="checkbox" class="form-checkbox bg-gray-700 text-green-500">
+                    <span>Продавался раньше</span>
+                </label>
+                <input type="text" placeholder="Тип аккаунта" class="bg-gray-700 text-white px-4 py-2 rounded">
+            </div>
+        </section>
+
+        <section class="bg-gray-800 p-6 rounded">
+            <div class="bg-gray-700 p-4 rounded mb-4">
+                <!-- Добавляем фото товара -->
+                <img src="static/pa.jpeg" alt="Фото товара" class="w-full h-40 object-cover rounded mb-4">
+                <p class="text-lg font-semibold">Супер пупер аккаунт</p>
+                <div class="flex space-x-2 mt-2">
+                    <span class="bg-gray-600 text-gray-300 px-2 py-1 rounded">Нет привязки к телефону</span>
+                    <span class="bg-gray-600 text-gray-300 px-2 py-1 rounded">Есть 2FA</span>
+                    <span class="bg-gray-600 text-gray-300 px-2 py-1 rounded">40 танков</span>
+                    <span class="bg-gray-600 text-gray-300 px-2 py-1 rounded">10 топов</span>
+                    <span class="bg-gray-600 text-gray-300 px-2 py-1 rounded">10 премов</span>
+                    <span class="bg-gray-600 text-gray-300 px-2 py-1 rounded">5 топов-премов</span>
+                </div>
+                <p class="text-gray-400 mt-2">Turan KMT • 38 мин. назад</p>
+                <p class="text-xl text-red-500 mt-2">1337 руб.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
